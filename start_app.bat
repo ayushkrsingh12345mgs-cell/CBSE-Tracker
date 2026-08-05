@@ -1,0 +1,3 @@
+@echo off
+echo Opening Sunil Bhaiya Study Tracker in Chrome Incognito...
+start chrome --incognito "file:///%~dp0index.html"

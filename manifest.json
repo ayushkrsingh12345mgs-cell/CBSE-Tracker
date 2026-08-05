@@ -1,0 +1,23 @@
+{
+  "name": "Sunil Bhaiya Tracker",
+  "short_name": "Sunil Bhaiya",
+  "description": "Offline-capable CBSE Class 9 & 10 preparation planner by Sunil Bhaiya",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "assets/icons/logo.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/logo-maskable.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}

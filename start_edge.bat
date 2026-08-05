@@ -1,0 +1,3 @@
+@echo off
+echo Opening Sunil Bhaiya Study Tracker in Microsoft Edge...
+start msedge "file:///%~dp0index.html"
