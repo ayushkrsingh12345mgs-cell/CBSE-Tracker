@@ -1376,7 +1376,7 @@
     if (!overlay) return;
 
     overlay.innerHTML = `
-      <div class="modal-content">
+      <div class="modal-content pdf-modal">
         <div class="modal-header">
           <h3 style="margin:0;">📄 ${escapeHtml(title)}</h3>
           <button type="button" id="closePdfModalBtn" class="btn btn-sm btn-secondary">✕ Close</button>

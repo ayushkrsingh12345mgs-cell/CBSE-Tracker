@@ -103,16 +103,21 @@
       const validDays = Math.max(daysLeft, 1);
       requiredPace = parseFloat((remainingStages / validDays).toFixed(1));
 
-      if (requiredPace <= 2) {
+      if (completionPercentage === 0) {
+        statusColor = "grey";
+        statusLabel = "Not Started";
+      } else if (completionPercentage <= 30) {
+        statusColor = "red";
+        statusLabel = "Pace Up";
+      } else if (completionPercentage <= 60) {
+        statusColor = "amber";
+        statusLabel = "Building Momentum";
+      } else if (completionPercentage <= 90) {
         statusColor = "green";
         statusLabel = "On Track";
-      } else if (requiredPace <= 4) {
-        statusColor = "amber";
-        statusLabel = "Pace Up";
       } else {
-        statusColor = "red";
-        statusLabel = "Action Required";
-        advice = "This pace is tough. Prioritise Concepts/Theory + NCERT Questions, and accelerate revision.";
+        statusColor = "blue";
+        statusLabel = "Exam Ready";
       }
     } else {
       statusLabel = "No Exam Date";

@@ -52,7 +52,7 @@ self.addEventListener("fetch", event => {
   const url = new URL(event.request.url);
 
   // NEVER cache PDFs in Service Worker
-  if (url.pathname.endsWith(".pdf")) {
+  if (url.pathname.endsWith(".pdf") || url.pathname.includes("/assets/pdfs/")) {
     return;
   }
 

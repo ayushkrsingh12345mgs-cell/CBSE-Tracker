@@ -1,0 +1,3 @@
+# Exclude static PDF binaries from SPA rewrite fallback
+/assets/pdfs/*  /assets/pdfs/:splat  200!
+/*              /index.html          200

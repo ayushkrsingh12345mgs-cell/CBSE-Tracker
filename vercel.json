@@ -1,0 +1,27 @@
+{
+  "rewrites": [
+    {
+      "source": "/assets/pdfs/:path*",
+      "destination": "/assets/pdfs/:path*"
+    },
+    {
+      "source": "/((?!assets/|css/|js/|manifest.json|sw.js).*)",
+      "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/assets/pdfs/(.*)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/pdf"
+        },
+        {
+          "key": "Content-Disposition",
+          "value": "inline"
+        }
+      ]
+    }
+  ]
+}
